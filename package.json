@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node lib/server.js",
     "prepare-data": "node lib/prepare-data.js",
     "train": "node lib/train.js"
   },
@@ -13,6 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs-node": "^0.3.0",
+    "hapi": "^18.1.0",
+    "inert": "^5.1.2",
     "lodash": "^4.17.11",
     "rimraf": "^2.6.3",
     "sharp": "^0.21.3"
