@@ -1,0 +1,11 @@
+<img src="data:image/jpg;base64, {{base64}}" alt=""/>
+<ul>
+    <li>Results:<li>
+    {{#each predictions}}
+        {{#if @first}}
+            <li><b>{{this.name}} - {{this.pClean}}</b></li>
+        {{else}}
+            <li>{{this.name}} - {{this.pClean}}</li>
+        {{/if}}
+    {{/each}}
+</ul>
